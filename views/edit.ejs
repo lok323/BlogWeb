@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+<h2>Update Post</h2>
+<form  method="POST">
+    <input name="title" type="text" class="feedback-input" placeholder="Title" value="<%= mainData.titles[postSeq.post] %>"/>
+    <textarea name="content" class="feedback-input" placeholder="Content" ><%= mainData.contents[postSeq.post] %></textarea>
+    <input type="submit" class="btn btn-secondary" formaction="/edit/<%=postSeq.post%>" value="Save Changes" />
+    <input type="submit" class="btn btn-outline-secondary" formaction="/" formmethod="get" value="Cancel" />
+</form>
+
+<%- include("partials/footer.ejs") %>

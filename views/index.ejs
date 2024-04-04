@@ -1,0 +1,16 @@
+<%- include("partials/header.ejs") %>
+<h1>Welcome to my blog!</h1>
+
+<ul>
+   <%if(titles.length > 0){ %>
+    <%   titles.forEach((item,index)=> {%>
+        
+        <li>
+           <a href="/articles/<%=index%>" id="<%=index%>"><%=item%></a>  -  Posted on <%= timeStamp %>
+        </li>
+        <% } ) %>
+        <% }; %>
+   
+</ul>
+
+<%- include("partials/footer.ejs") %>

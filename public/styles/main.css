@@ -1,0 +1,52 @@
+
+form {
+    margin-top: 50px;
+  }
+  
+  .feedback-input {
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid lightgray;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+  }
+  
+  .feedback-input:focus {
+    border: 2px solid black;
+  }
+
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+  }
+
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background-color: gray;
+  }
+
+  .nav-link{
+    color: gray;
+  }
+
+  .nav{
+    --bs-nav-link-hover-color: black;
+  }
+
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+
+  li{
+    margin-bottom: 10px;
+  }
